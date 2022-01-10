@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f0f0f0;
+    font-size: 1.6rem;
+}
+
+#user-pic img, .comment img {
+    width: 40px;
+    height: 40px;
+}
+#post-content, #comment, #engagement {
+    font-size: 1.4rem;
+}
+#engagement span:hover, .text-comment div span:hover {
+    color: #4267B2;
+    cursor: pointer;
+}
+
+#posts {
+    display: none;
+    background: white;
+    margin: 30px auto;
+    padding: 15px;
+    border-radius: 8px;
+    width: 550px;
+    min-width: 35%;
+
+    #post {
+
+        #post-presentation {
+            display: grid;
+            grid-template-columns: 1fr 13fr 1fr;
+
+            div {
+                padding: 8px;
+                font-size: 1.6rem;
+            }
+            
+            #user-name {
+                font-weight: 700;
+
+                p:nth-child(2) {
+                    color: #7d7d7d;
+                    font-size: 1.2rem;
+                }
+            }
+            
+            .config {
+                
+                span {
+                    background: #7d7d7d;
+                    margin: 0 -1px;
+                    border-radius: 50%;
+                    display: inline-block;
+                    width: 4px;
+                    height: 4px;
+                }
+            }
+        }
+    }
+
+    #interactions {
+        display: grid;
+        grid-template-columns: 1fr 15fr 15fr;
+
+        p {
+            color: #6d6d6d;
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin: 0.75rem 0;
+            img {
+                width: 1.2rem;
+            }
+        }
+        p:nth-child(3) {
+            text-align: right;
+        }
+    }
+
+    #engagement {
+        border: 1.5px solid #989898;
+        border-left: 0;
+        border-right: 0;
+        color: #989898;
+        font-weight: 700;
+        font-size: 1.3rem;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        p {
+            margin: 0.5rem 0
+        }
+    }
+
+    #comments {
+        //padding: 0.8rem 0;
+
+        .comment {
+            display: grid;
+            grid-template-columns: 1fr 14fr;
+            gap: 1rem;
+            margin: 0.8rem 0;
+
+            > img {
+                display: block;
+            }
+
+            .text-comment {
+                div:nth-child(1) {
+                    background: #f0f0f0;
+                    border-radius: 8px;
+                    padding: 1rem;
+
+                    p:nth-child(1) {
+                        font-weight: 700;
+                    }
+                    p:nth-child(2) {
+                        display: block;
+                    }
+                }
+
+                div:nth-child(2) {
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                    color: #989898;
+                    padding: 0.5rem 1rem;
+                }
+            }
+        }
+    }
+}
